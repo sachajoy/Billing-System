@@ -1,2 +1,2 @@
 # Billing-System
-Java Spring Boot
+Java Spring Boot Project
