@@ -2,12 +2,16 @@ package com.billingsystem.billing.beans;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 public class User {
 
     @Id
     private int id;
+
+    @Size(min = 6, message = "Username cannot be less than 6 charaters")
     private String username;
     private String password;
     private String firstName;
