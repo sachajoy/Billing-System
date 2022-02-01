@@ -18,11 +18,20 @@ public class HomeController {
         System.out.println("in home controller");
         return "index";
     }
-
+    @GetMapping("/goToProduct")
+    public String goToProduct(){
+        System.out.println("goToProduct");
+        return "product";
+    }
     @GetMapping("/goToSearch")
     public String goToSearch(){
         System.out.println("goToSearch");
         return "search";
+    }
+    @GetMapping("/goToDelete")
+    public String goToDelete(){
+        System.out.println("goToDelete");
+        return "delete";
     }
     @GetMapping("/goToLogin")
     public String goToLogin(){

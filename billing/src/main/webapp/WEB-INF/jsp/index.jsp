@@ -11,7 +11,7 @@
             <ul class="navbar">
                 <li><a href="/home">home</a></li>
                 <li><a href="/goToLogin">login</a></li>
-                <li><a href="/goToSearch">search</a></li>
+                <li><a href="/goToProduct">Product</a></li>
                 <li><a href="redirect">linkedin</a></li>
             </ul>
 </body>
