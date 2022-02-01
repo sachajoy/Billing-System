@@ -24,6 +24,8 @@
 			     <input type="submit" value="Login">
 			</form>
 			 <a class="card-title" href="/goToRegistration">Register new user? Click here</a>
+			 <br />
+			 <a class="card-title" href="/listUser"> List of All user</a>
 		</div>
 	</section>
 

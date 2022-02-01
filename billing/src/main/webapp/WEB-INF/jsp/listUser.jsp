@@ -13,9 +13,9 @@
 	<ul>
 	<c:forEach var="user" items="${userList}">
 	    <li>
-	        <a href="/udpateUser/${user.id}">
-	            ${user.username}
-	        </a>
+
+	            ${user.username} - <a href="/udpateUser/${user.id}"> Update User </a>
+
 	    </li>
 
  </c:forEach>
