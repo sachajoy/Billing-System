@@ -42,7 +42,7 @@ public class HomeController {
 
     @ModelAttribute("genderItems")
     public List<String> getGenderItems(){
-        return Arrays.asList(new String[] {"Male", "Female", "Others"});
+        return Arrays.asList("Male", "Female", "Others");
     }
 
 }

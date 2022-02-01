@@ -1,14 +1,17 @@
 package com.billingsystem.billing.beans;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.Date;
 
 @Entity
 public class User {
 
     @Id
+    @GeneratedValue
     private int id;
 
     @Size(min = 6, message = "Username cannot be less than 6 charaters")
@@ -18,7 +21,7 @@ public class User {
     private String lastName;
     private String gender;
     private String activity;
-    private String dateOfBirth;
+    private Date dateOfBirth;
 
     public int getId() {
         return id;
@@ -76,11 +79,11 @@ public class User {
         this.activity = activity;
     }
 
-    public String getDateOfBirth() {
+    public Date getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
+    public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 }
