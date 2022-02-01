@@ -1,2 +1,5 @@
-package com.billingsystem.billing.repository;public class OrderRepository {
+package com.billingsystem.billing.repository;
+
+public interface OrderRepository {
 }
+
