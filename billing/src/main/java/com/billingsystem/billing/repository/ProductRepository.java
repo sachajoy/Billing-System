@@ -14,6 +14,6 @@ public interface ProductRepository extends CrudRepository<Product, Integer> {
     @Query("select p from Product p where p.name like %:name%")
     public List<Product> searchByName(@Param("name") String name);
 
-//    @Query("delete from Product p where p.name like %:name%")
+     //@Query("delete from Product p where p.name like %:name%")
     //public List<Product> deleteById(@Param("name") String name);
 }

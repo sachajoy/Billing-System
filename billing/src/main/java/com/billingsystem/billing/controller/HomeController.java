@@ -4,9 +4,9 @@ import com.billingsystem.billing.beans.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -21,18 +21,19 @@ public class HomeController {
     @GetMapping("/goToProduct")
     public String goToProduct(){
         System.out.println("goToProduct");
-        return "product";
+        return "listProduct";
+    }
+    @GetMapping("/showForm")
+    public String showForm(){
+        System.out.println("showForm");
+        return "product-form";
     }
     @GetMapping("/goToSearch")
     public String goToSearch(){
         System.out.println("goToSearch");
         return "search";
     }
-    @GetMapping("/goToDelete")
-    public String goToDelete(){
-        System.out.println("goToDelete");
-        return "delete";
-    }
+
     @GetMapping("/goToLogin")
     public String goToLogin(){
         System.out.println("goToLogin");

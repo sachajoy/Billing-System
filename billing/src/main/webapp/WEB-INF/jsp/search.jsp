@@ -11,10 +11,11 @@
 
 
 <ul class="navbar">
-                <li><a href="#">Add Product</a></li>
-                <li><a href="#">Search Product</a></li>
-                <li><a href="#">Update Product</a></li>
-                <li><a href="#">Delete Product</a></li>
+	<li><a href="#">home</a></li>
+	<li><a href="#">login</a></li>
+	<li><a href="#">search</a></li>
+	<li><a href="#">product</a></li>
+	<li><a href="#">linkedin</a></li>
             </ul>
 
 

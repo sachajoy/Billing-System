@@ -1,14 +1,20 @@
 package com.billingsystem.billing.beans;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "product")
 public class Product {
 
     @Id
+    @GeneratedValue
     private int id;
+
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "image_path")
+    private String imagePath;
 
     public String getImagePath() {
         return imagePath;
@@ -17,8 +23,6 @@ public class Product {
     public void setImagePath(String imagePath) {
         this.imagePath = imagePath;
     }
-
-    private String imagePath;
 
     public int getId() {
         return id;
@@ -36,5 +40,9 @@ public class Product {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return "Product [id=" + id + ", name=" + name + ", imagePath=" + imagePath + "]";
+    }
 
 }

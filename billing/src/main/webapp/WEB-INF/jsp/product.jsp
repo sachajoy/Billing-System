@@ -11,7 +11,7 @@
 <ul class="navbar">
     <li><a href="#">Add Product</a></li>
     <li><a href="/goToSearch"> Search Product</a></li>
-    <li><a href="#">Update Product</a></li>
+    <li><a href="/goToProductUpdate">Update Product</a></li>
     <li><a href="/goToDelete">Delete Product</a></li>
 </ul>
 </body>
