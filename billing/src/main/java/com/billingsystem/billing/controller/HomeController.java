@@ -18,7 +18,16 @@ public class HomeController {
         System.out.println("in home controller");
         return "index";
     }
-
+    @GetMapping("/product")
+    public String goToProduct(){
+        System.out.println("goToProduct");
+        return "listProduct";
+    }
+    @GetMapping("/showForm")
+    public String showForm(){
+        System.out.println("showForm");
+        return "product-form";
+    }
     @GetMapping("/goToSearch")
     public String goToSearch(){
         System.out.println("goToSearch");
